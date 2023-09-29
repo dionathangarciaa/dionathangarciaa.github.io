@@ -1,0 +1,186 @@
+header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  padding: 2.1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  z-index: 4;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container nav ul {
+  display: flex;
+  margin-right: 3.2rem;
+  gap: 2.4rem;
+}
+
+header .container nav ul li a {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  transition: all 0.3s;
+}
+
+header .container nav ul li a:hover {
+  opacity: 0.7;
+}
+
+header .container nav .btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+header .container nav .btn .hamburger {
+  display: none;
+}
+
+header .container nav .btn .btn-primary {
+  background-color: var(--yellow-200);
+  width: 19.6rem;
+  height: 5.4rem;
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+  color: #21294c;
+  transition: all 0.3s;
+}
+
+header .container nav .btn a {
+  color: #21294c;
+}
+
+header .container nav .btn .btn-primary:hover {
+  background-color: var(--yellow-400);
+}
+
+header .container nav .btn .btn-primary span {
+  background-color: var(--yellow-200);
+  display: block;
+  width: 18rem;
+  height: 3.9rem;
+  padding: 0.45rem 4rem;
+  font-family: "Burbank Big Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #21294c;
+  transform: skew(-8deg);
+}
+
+header .container nav .menu-mobile img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--blue-600);
+  width: 100%;
+  height: 100%;
+  padding: 10rem 2.4rem 0 2.4rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 4;
+}
+
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+aside nav ul .not-border {
+  border-top: none;
+}
+
+aside nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2.4rem;
+}
+
+aside nav ul li a {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  transition: all 0.3s;
+}
+
+aside nav ul li a:hover {
+  opacity: 0.7;
+}
+
+aside nav .btn-primary {
+  background-color: var(--yellow-200);
+  padding: 1.2rem 4.8rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Burbank Big Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: linear-gradient(180deg, #21294c 0%, #36426c 100%);
+  transition: transform 0.3s;
+  margin-top: 3.2rem;
+}
+
+.open-menu aside {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 4;
+}
+
+/*----------RESPONSIVO----------*/
+
+@media (max-width: 800px) {
+  header {
+    height: 7rem;
+  }
+
+  header .container {
+    padding: 0 2.4rem;
+  }
+
+  header .container nav ul {
+    display: none;
+  }
+
+  header .container nav .btn .hamburger {
+    display: block;
+  }
+
+  header .container nav .btn .btn-primary {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  header .container {
+    padding: 0 1.6rem;
+  }
+
+  header .container nav a img {
+    width: 10rem;
+  }
+}

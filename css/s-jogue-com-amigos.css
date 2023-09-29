@@ -1,0 +1,188 @@
+.jogue-com-amigos {
+  margin-top: 16rem;
+  width: 100%;
+  height: 56rem;
+  background: radial-gradient(
+    66.09% 66.09% at 50% 47.49%,
+    #46cae9 0%,
+    #0866b0 100%
+  );
+  display: flex;
+}
+
+.jogue-com-amigos .container {
+  max-width: 70rem;
+  margin-left: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.jogue-com-amigos .container .txt {
+  max-width: 60rem;
+}
+
+.jogue-com-amigos .container .txt h3 {
+  color: var(--gray-50);
+  font-family: "Burbank Big Condensed";
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+
+.jogue-com-amigos .container .txt p {
+  color: var(--gray-100);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  margin: 2.4rem 0 4rem 0;
+  max-width: 55rem;
+}
+
+.jogue-com-amigos .container .txt .btn-primary {
+  background-color: var(--yellow-200);
+  width: 24.2rem;
+  height: 5.4rem;
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+  color: linear-gradient(180deg, #21294c 0%, #36426c 100%);
+  transition: all 0.3s;
+}
+
+.jogue-com-amigos .container .txt .btn-primary:hover {
+  background-color: var(--yellow-400);
+}
+
+.jogue-com-amigos .container .txt .btn-primary span {
+  background-color: var(--yellow-200);
+  display: block;
+  width: 22.6rem;
+  height: 3.9rem;
+  padding: 0.5rem 3.8rem;
+  font-family: "Burbank Big Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: linear-gradient(180deg, #21294c 0%, #36426c 100%);
+  transform: skew(-8deg);
+}
+
+.jogue-com-amigos img {
+  width: 77rem;
+  height: 56rem;
+}
+
+/*----------RESPONSIVO----------*/
+@media (max-width: 1440px) {
+  .jogue-com-amigos img {
+    width: 72rem;
+  }
+
+  .jogue-com-amigos .container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .jogue-com-amigos .container .txt p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    max-width: 44rem;
+  }
+
+  .jogue-com-amigos img {
+    width: 68.3rem;
+    height: 56rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .jogue-com-amigos {
+    height: 41rem;
+  }
+
+  .jogue-com-amigos .container .txt h3 {
+    font-size: 4rem;
+  }
+
+  .jogue-com-amigos img {
+    width: 61rem;
+    height: 41rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .jogue-com-amigos {
+    margin-top: 12rem;
+    flex-direction: column;
+    padding: 8rem 0;
+    height: 83rem;
+  }
+
+  .jogue-com-amigos .container {
+    padding: 0 24px;
+    margin: 0 auto;
+    max-width: 58rem;
+  }
+
+  .jogue-com-amigos .container .txt {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  .jogue-com-amigos .container .txt p {
+    max-width: 54rem;
+  }
+
+  .jogue-com-amigos img {
+    width: 100%;
+    height: 44rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .jogue-com-amigos {
+    margin-top: 10rem;
+    height: 66rem;
+  }
+
+  .jogue-com-amigos .container {
+    padding: 0 16px;
+  }
+
+  .jogue-com-amigos .container .txt h3 {
+    font-size: 3.2rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .jogue-com-amigos .container .txt p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin: 1.6rem 0 3.2rem 0;
+  }
+
+  .jogue-com-amigos img {
+    height: 32rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .jogue-com-amigos {
+    margin-top: 10rem;
+    height: 68.9rem;
+  }
+
+  .jogue-com-amigos .container .txt .btn-primary span {
+    padding: 0.6rem 2.8rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .jogue-com-amigos {
+    margin-top: 10rem;
+    height: 67.1rem;
+  }
+}

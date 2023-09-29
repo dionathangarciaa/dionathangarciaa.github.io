@@ -1,0 +1,133 @@
+footer {
+  margin-top: 16rem;
+}
+
+footer .container main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 4rem;
+}
+
+footer .container main img {
+  width: 7.2rem;
+}
+
+footer .container main .social {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+footer .container main .social p {
+  color: var(--gray-700);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+footer .container main .social ul {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+footer .container main .social ul li a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+footer .container .direitos-reservados {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+footer .container .direitos-reservados p {
+  max-width: 66.6rem;
+  color: var(--gray-700);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+footer .container .direitos-reservados .explow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .container .direitos-reservados .explow p {
+  color: var(--gray-600);
+  text-align: right;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/*----------RESPONSIVO----------*/
+@media (max-width: 800px) {
+  footer {
+    margin-top: 10rem;
+  }
+
+  footer .container {
+    padding: 0px 24px;
+  }
+
+  footer .container main {
+    padding-bottom: 3rem;
+  }
+
+  footer .container main img {
+    width: 6.2rem;
+  }
+
+  footer .container .direitos-reservados {
+    margin: 3rem 0;
+  }
+
+  footer .container .direitos-reservados p {
+    max-width: 44.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-top: 8rem;
+  }
+
+  footer .container main img {
+    width: 5.2rem;
+  }
+
+  footer .container .direitos-reservados p {
+    max-width: 32.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  footer .container main .social {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .container .direitos-reservados {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .container .direitos-reservados .explow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}

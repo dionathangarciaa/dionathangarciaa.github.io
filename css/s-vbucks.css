@@ -1,0 +1,357 @@
+.s-vbucks {
+  margin-top: 16rem;
+}
+
+.s-vbucks .container .txt {
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+.s-vbucks .container .txt img {
+  width: 108.5rem;
+}
+
+.s-vbucks .container .txt h2 {
+  font-family: "Burbank Big Condensed";
+  font-size: 9.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 14rem;
+  left: 0;
+  background: linear-gradient(180deg, #0866b0 0%, #46cae9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-vbucks .container .all-cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.s-vbucks .container .all-cards .card {
+  width: 30.6rem;
+  height: 46rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #0866b0 0%, #46cae9 100%);
+  border-top: 10px solid var(--gray-200);
+  border-right: 10px solid var(--gray-200);
+  border-bottom: 6.2rem solid var(--gray-200);
+  border-left: 10px solid var(--gray-200);
+  transition: all 0.3s;
+}
+
+.s-vbucks .container .all-cards .card::after {
+  content: "";
+  width: 14rem;
+  height: 1rem;
+  background-color: var(--cyan-400);
+  right: 0;
+  bottom: -0.9rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.s-vbucks .container .all-cards .card:hover {
+  border-top: 10px solid var(--yellow-400);
+  border-right: 10px solid var(--yellow-400);
+  border-bottom: 6.2rem solid var(--yellow-400);
+  border-left: 10px solid var(--yellow-400);
+}
+
+.s-vbucks .container .all-cards .card .card-txt .preco {
+  color: var(--gray-700);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-top: 3.2rem;
+  position: absolute;
+  bottom: -11.4rem;
+}
+
+.s-vbucks .container .all-cards .card .card-txt {
+  margin-top: 3.2rem;
+  position: relative;
+}
+
+.s-vbucks .container .all-cards .card .card-txt h4 {
+  color: var(--gray-800);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: 0.48rem;
+}
+
+.s-vbucks .container .all-cards .card .card-txt h6 {
+  color: var(--gray-50);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.s-vbucks .container .all-cards .card .desconto {
+  width: 16rem;
+  height: 5rem;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background-color: var(--yellow-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-vbucks .container .all-cards .card .desconto span {
+  color: var(--gray-900);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+
+/*----------RESPONSIVO----------*/
+@media (max-width: 1366px) {
+  .s-vbucks {
+    margin-top: 16rem;
+  }
+
+  .s-vbucks .container .txt img {
+    width: 96rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    top: 12rem;
+  }
+
+  .s-vbucks .container .all-cards .card::after {
+    width: 13.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .s-vbucks .container .all-cards .card::after {
+    width: 12.5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .s-vbucks .container .txt img {
+    width: 84rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    top: 10rem;
+  }
+
+  .s-vbucks .container .all-cards .card {
+    height: 40rem;
+  }
+
+  .s-vbucks .container .all-cards .card::after {
+    width: 11.5rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco {
+    bottom: -9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .s-vbucks {
+    margin-top: 10rem;
+  }
+
+  .s-vbucks .container {
+    padding: 0 2.4rem;
+  }
+
+  .s-vbucks .container .txt {
+    margin-bottom: 10rem;
+  }
+
+  .s-vbucks .container .txt img {
+    width: 60rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    font-size: 6.4rem;
+    top: 7.2rem;
+  }
+
+  .s-vbucks .container .all-cards {
+    gap: 2rem;
+  }
+
+  .s-vbucks .container .all-cards .card {
+    height: 28rem;
+  }
+
+  .s-vbucks .container .all-cards .card .imagem img {
+    width: 140px;
+  }
+
+  .s-vbucks .container .all-cards .card .imagem .v-1000 {
+    width: 110px;
+  }
+
+  .s-vbucks .container .all-cards .card::after {
+    width: 8rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt h4 {
+    font-size: 3.2rem;
+    letter-spacing: 0.38rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt h6 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco {
+    font-size: 2.4rem;
+    bottom: -6.2rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco.preco-1 {
+    bottom: -7rem;
+  }
+
+  .s-vbucks .container .all-cards .card .desconto {
+    width: 12rem;
+    height: 3rem;
+  }
+
+  .s-vbucks .container .all-cards .card .desconto span {
+    font-size: 1.8rem;
+    letter-spacing: 0.14rem;
+  }
+}
+
+@media (max-width: 600px) {
+  c .s-vbucks {
+    margin-top: 8rem;
+  }
+
+  .s-vbucks .container .txt {
+    margin-bottom: 8rem;
+  }
+
+  .s-vbucks .container .txt img {
+    width: 42rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    font-size: 4.8rem;
+    top: 5.5rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .s-vbucks .container .all-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .s-vbucks .container .all-cards .card {
+    height: 33rem;
+    width: 100%;
+  }
+
+  .s-vbucks .container .all-cards .card::after {
+    width: 26.5rem;
+  }
+
+  .s-vbucks .container .all-cards .card .imagem .v-1000 {
+    width: 110px;
+  }
+
+  .s-vbucks .container .all-cards .card .imagem .v-13500 {
+    width: 200px;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco {
+    bottom: -8.2rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco.preco-1 {
+    bottom: -9.2rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco.preco-4 {
+    bottom: -6.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .s-vbucks {
+    margin-top: 10rem;
+  }
+
+  .s-vbucks .container {
+    padding: 0 1.6rem;
+  }
+
+  .s-vbucks .container .txt {
+    margin-bottom: 5rem;
+  }
+
+  .s-vbucks .container .txt img {
+    width: 39rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    font-size: 4rem;
+    top: 4.8rem;
+  }
+
+  .s-vbucks .container .all-cards .card::after {
+    width: 16.5rem;
+  }
+
+  .s-vbucks .container .all-cards .card .card-txt .preco {
+    font-size: 2.4rem;
+    bottom: -8.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .s-vbucks .container .txt img {
+    width: 35rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    top: 5.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .s-vbucks .container .txt img {
+    width: 33rem;
+  }
+
+  .s-vbucks .container .txt h2 {
+    font-size: 4rem;
+    top: 5.2rem;
+  }
+}

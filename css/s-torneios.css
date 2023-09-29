@@ -1,0 +1,308 @@
+.s-torneios {
+  margin-top: 16rem;
+  background-color: var(--white);
+}
+
+.s-torneios .container .txt {
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+.s-torneios .container .txt h2 {
+  font-family: "Burbank Big Condensed";
+  font-size: 9.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 7.2rem;
+  left: 0;
+  background: linear-gradient(180deg, #0866b0 0%, #46cae9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-torneios .container .all-cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.s-torneios .container .all-cards .card {
+  width: 41.6rem;
+  height: 51rem;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: linear-gradient(180deg, #46cae9 0%, #0866b0 100%);
+}
+
+.s-torneios .container .all-cards .card::after {
+  content: "";
+  width: 100%;
+  height: 29.9rem;
+  background: linear-gradient(180deg, rgba(9, 13, 21, 0) 0%, #090d15 100%);
+  position: absolute;
+  z-index: 2;
+}
+
+.s-torneios .container .all-cards .card .imagem {
+  position: absolute;
+  z-index: 1;
+  height: 54rem;
+  transition: transform 0.3s;
+}
+
+.s-torneios .container .all-cards .card .imagem img {
+  height: 52.4rem;
+}
+
+.s-torneios .container .all-cards .card:hover .imagem {
+  transform: scale(1.05);
+}
+
+.s-torneios .container .all-cards .card .card-txt {
+  position: absolute;
+  z-index: 3;
+  margin-bottom: 13.6rem;
+}
+
+.s-torneios .container .all-cards .card .card-txt h4 {
+  color: var(--gray-50);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.s-torneios .container .all-cards .card .card-txt .break {
+  max-width: 25rem;
+}
+
+.s-torneios .container .all-cards .card .card-txt h5 {
+  color: var(--gray-50);
+  text-align: center;
+  font-family: "Burbank Big Condensed";
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.36rem;
+  text-transform: uppercase;
+}
+
+/*----------RESPONSIVO----------*/
+@media (max-width: 1366px) {
+  .s-torneios .container .txt img {
+    width: 96rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    top: 7.2rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .s-torneios .container .txt img {
+    width: 84rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    top: 5rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h4 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .s-torneios {
+    margin-top: 10rem;
+  }
+
+  .s-torneios .container {
+    padding: 0px 24px;
+  }
+
+  .s-torneios .container .txt {
+    margin-bottom: 10rem;
+  }
+
+  .s-torneios .container .txt img {
+    width: 60rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    font-size: 6.4rem;
+    top: 4rem;
+  }
+
+  .s-torneios .container .all-cards {
+    gap: 2rem;
+  }
+
+  .s-torneios .container .all-cards .card {
+    height: 39rem;
+  }
+
+  .s-torneios .container .all-cards .card::after {
+    height: 20.9rem;
+  }
+
+  .s-torneios .container .all-cards .card .imagem {
+    height: 42rem;
+  }
+
+  .s-torneios .container .all-cards .card .imagem img {
+    height: 40.4rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt {
+    margin-bottom: 7.6rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h4 {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h5 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .s-torneios {
+    margin-top: 8rem;
+  }
+
+  .s-torneios .container .txt {
+    margin-bottom: 8rem;
+  }
+
+  .s-torneios .container .txt img {
+    width: 42rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    font-size: 4.8rem;
+    top: 2.5rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .s-torneios .container .all-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .s-torneios .container .all-cards .card {
+    height: 28rem;
+    width: 100%;
+  }
+
+  .s-torneios .container .all-cards .card::after {
+    height: 17.9rem;
+  }
+
+  .s-torneios .container .all-cards .card .imagem {
+    height: 30rem;
+  }
+
+  .s-torneios .container .all-cards .card .imagem img {
+    height: 28.4rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt {
+    margin-bottom: 4.8rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h4 {
+    font-size: 3.2rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h5 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .s-torneios {
+    margin-top: 10rem;
+  }
+
+  .s-torneios .container {
+    padding: 0px 16px;
+  }
+
+  .s-torneios .container .txt {
+    margin-bottom: 5rem;
+  }
+
+  .s-torneios .container .txt img {
+    width: 40rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    font-size: 4rem;
+    top: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .s-torneios .container .all-cards {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .s-torneios .container .all-cards .card {
+    height: 28rem;
+    width: 100%;
+  }
+
+  .s-torneios .container .all-cards .card .card-txt h4 {
+    font-size: 3.2rem;
+    letter-spacing: 0.5rem;
+    line-height: 4rem;
+    margin-bottom: 1.8rem;
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .s-torneios .container .txt img {
+    width: 35rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    font-size: 3.5rem;
+    top: 2.5rem;
+    letter-spacing: 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .s-torneios .container .txt img {
+    width: 33rem;
+  }
+
+  .s-torneios .container .txt h2 {
+    font-size: 3.2rem;
+    top: 2.4rem;
+  }
+}
